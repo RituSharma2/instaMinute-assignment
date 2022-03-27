@@ -1,0 +1,12 @@
+Framework : Express.js,nodejs
+package : moment (npm i moment) for date and time
+approach : create trigger function in which firstly i stored data in one variable eventdata which is coming 
+            from request body.
+            Then one check for request body.
+            use for loop to iterate over event array and converting date and time with moment.format(y.m.d.h.m.s)
+            then check if schedule time is less then current date and time. then i got problem.
+
+problem :  then i got problem how to initiate function for future time but then i calculate difference between
+            current time and schedule time and add delay time as string length(calculate text length and reverse function used ) .
+            Used set timeout function for delay .
+            for backward string i used reverse built-in method.
